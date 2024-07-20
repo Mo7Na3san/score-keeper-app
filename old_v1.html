@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alter
+nates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="fontawesome.css" />
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <!-- <div>
+          <img
+            src="headerImg.avif"
+            id="headerImg"
+            alt="score the result"
+            class="headerImg"
+          />
+        </div> -->
+        <h1 class="title">Score Keeper</h1>
+      </header>
+      <div class="mainBody">
+        <div class="spans">
+          <i class="customIcon"></i>
+          <span id="firstPlayer" class="counter">_</span>
+          <p>to</p>
+          <span id="secondPlayer" class="counter">_</span>
+        </div>
+        <div id="congratulationsBox"></div>
+        <h2>Use the buttons below to keep score</h2>
+        <div class="outOfBox">
+          <h3 id="playingTo">
+            <i class="fa-solid fa-play start"></i>Playing to
+          </h3>
+          <select name="" id="selectList">
+            <option value="choose">Choose</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button id="plusBtnOne">
+            <i class="fa-solid fa-plus icon"></i>1 Player 1
+          </button>
+          <button id="plusBtnTwo">
+            <i class="fa-solid fa-plus icon"></i>1 Player 2
+          </button>
+          <button id="reset">
+            <i class="fa-solid fa-rotate-right icon"></i>Reset
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- <script type="module" src="script.js"></script> -->
+    <script src="script_two.js" type="module"></script>
+  </body>
+</html>

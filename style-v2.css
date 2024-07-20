@@ -1,0 +1,269 @@
+@import url(style.css);
+* {
+  color: #f9f5ff;
+}
+button {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  flex: 1;
+  border: 0;
+  position: relative;
+}
+.primary-btn {
+  background-color: #28262c;
+}
+/* .secondary-btn {
+} */
+.new-container {
+  height: 100vh;
+  background-color: #615b7a;
+  overflow: hidden;
+}
+span {
+  background-color: #28262c;
+}
+.control-btns {
+  height: 40vh;
+  background-color: #454153;
+  border-radius: 0 0 30px 30px;
+  -webkit-border-radius: 0 0 30px 30px;
+  -moz-border-radius: 0 0 30px 30px;
+  -ms-border-radius: 0 0 30px 30px;
+  -o-border-radius: 0 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 0 7px 01px rgb(0, 0, 0);
+  position: relative;
+}
+.manual {
+  position: absolute;
+  left: 15px;
+  top: 35px;
+  color: #d4c2fc;
+  font-size: 20px;
+}
+
+.control-btns div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.control-btns > div:nth-child(2) {
+  gap: 20px;
+  background-color: #7d75a15e;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  justify-content: space-between;
+}
+.control-btns > div:nth-child(2) > button {
+  background-color: #d4c2fc;
+  color: #454153;
+  font-size: 15px;
+  flex: 1;
+}
+.control-btns > div:nth-child(2) > button:nth-child(1) {
+  border-radius: 30px 5px 5px 30px;
+  -webkit-border-radius: 30px 5px 5px 30px;
+  -moz-border-radius: 30px 5px 5px 30px;
+  -ms-border-radius: 30px 5px 5px 30px;
+  -o-border-radius: 30px 5px 5px 30px;
+}
+.control-btns > div:nth-child(2) > button:nth-child(2) {
+  border-radius: 5px 30px 30px 5px;
+  -webkit-border-radius: 5px 30px 30px 5px;
+  -moz-border-radius: 5px 30px 30px 5px;
+  -ms-border-radius: 5px 30px 30px 5px;
+  -o-border-radius: 5px 30px 30px 5px;
+}
+/* .control-btns div:nth-child(3) {
+} */
+/* .control-btns div div select:first-child {
+  background-color: red;
+} */
+.control-btns > div > div select {
+  background-color: black;
+  color: rgb(184, 182, 182);
+  padding: 8px 15px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid rgb(184, 182, 182);
+  position: relative;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.control-btns > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.reset-icon {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 24px;
+  top: 17px;
+}
+h2 {
+  background-color: rgba(255, 0, 0, 0);
+}
+/* Second box style  */
+.users {
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: none;
+  box-sizing: border-box;
+}
+.users .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #d4c2fc;
+  align-items: center;
+  height: 90px;
+  padding: 10px 20px;
+  user-select: none;
+  gap: 8px;
+}
+.plus-one {
+  width: 45px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.user span {
+  width: 80px;
+  height: 50px;
+  margin-left: 20px;
+}
+.details {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: black;
+  padding: 5px;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  display: none;
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #1330ee; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Customize the scrollbar track when the thumb is being hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Customize the scrollbar track when it is being dragged */
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 0, 0, 0); /* Color of the track */
+}
+
+/* Customize the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Color of the corner */
+}
+
+/* end second box style  */
+.result-box {
+  height: 20vh;
+  background-color: rgb(240, 189, 189);
+  background-color: #454153;
+  border-radius: 30px 30px 0 0;
+  -webkit-border-radius: 30px 30px 0 0;
+  -moz-border-radius: 30px 30px 0 0;
+  -ms-border-radius: 30px 30px 0 0;
+  -o-border-radius: 30px 30px 0 0;
+  box-shadow: 0 0 7px 01px rgb(0, 0, 0);
+}
+.booklet {
+  padding: 20px;
+  background-color: #d4c2fc;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 0.3px black;
+  width: 300px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 2;
+  display: none;
+}
+.hide-booklet {
+  display: none;
+}
+.booklet h3 {
+  color: #28262c;
+  font-size: 25px;
+  font-weight: bold;
+}
+.booklet p {
+  color: #454153;
+  font-weight: 300;
+}
+.booklet :before {
+  content: "";
+  width: 100vh;
+  height: 100vh;
+  background-color: #d4c2fc3a;
+  z-index: -1;
+  top: -160%;
+  left: -30%;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.booklet .close-icon {
+  color: black;
+  font-size: 22px;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-v2.css" />
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="fontawesome.css" />
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <title>Score keeper</title>
+  </head>
+  <body>
+    <div id="booklet" class="booklet hide-">
+      <i
+        id="close-how-to-start"
+        class="fa-regular fa-circle-xmark close-icon"
+      ></i>
+      <h3>Score your points!</h3>
+      <p>
+        First, Add the players, write their names, and get started Scoring, if
+        the unit is more than 1 you can increase it, and you can Set a winning
+        goal (playing to), and you can reset and update Players every round ..
+      </p>
+    </div>
+    <div class="new-container container" id="container">
+      <div class="control-btns">
+        <div>
+          <h1 class="title">Score Keeper</h1>
+          <i
+            id="how-to-start-btn"
+            class="fa-solid fa-circle-question manual"
+          ></i>
+        </div>
+        <div>
+          <button id="add-player" class="">Add player</button>
+          <button id="reset-btn" class="">
+            <i class="reset-icon fa-solid fa-rotate-right"></i>
+            Reset
+          </button>
+        </div>
+        <div>
+          <!-- <h2>Playing to</h2> -->
+          <div>
+            <h5>Playing to</h5>
+            <select name="" id="select-win-score">
+              <option value="choose">Playing to</option>
+              <option value="5">5</option>
+              <option value="7">7</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+            </select>
+          </div>
+          <div>
+            <h5>Select unit</h5>
+            <select name="" id="unit-select">
+              <option value="">Select unit</option>
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="users" class="users"></div>
+      <script src="script_v2.js"></script>
+    </div>
+  </body>
+</html>
